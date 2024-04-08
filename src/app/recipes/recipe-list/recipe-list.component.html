@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <button mat-stroked-button>New Recipe</button>
+    </div>
+    <div>
+        Recipes list
+        <mat-list>
+            @for (recipe of recipes; track recipe.name) {
+                <!-- <mat-list-item> -->
+                    <div>
+                        <span matListItemTitle class="bold"> {{recipe.name}}</span>
+                        <span matListItemLine class="semi-bold"> {{recipe.description}}</span>    
+                        <img src="{{recipe.imagePath}}" class="recipe-img"/>
+                    </div>
+                <!-- </mat-list-item> -->
+                <app-recipe-item/>
+            }
+        </mat-list>
+    </div>
+</div>

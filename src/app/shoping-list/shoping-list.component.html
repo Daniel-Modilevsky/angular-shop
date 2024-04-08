@@ -1,0 +1,11 @@
+<div>
+    <app-shoping-edit/>
+    <hr/>
+    <p>shoping-list</p>
+    @for (ingridient of ingredients; track ingridient.name) {
+        <div>
+            <span > {{ingridient.name}}</span>
+            <span > {{ingridient.amount}}</span>    
+        </div>
+    }
+</div>

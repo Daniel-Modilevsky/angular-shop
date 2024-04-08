@@ -1,0 +1,15 @@
+.header-container{
+    background-color: lightslategray;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-nav{
+        display: flex;
+    }
+
+    .right-nav{
+        display: flex;
+    }
+}
